@@ -1,0 +1,463 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="text-align:center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" style="background-color: crimson;">
+              <a class="navbar-brand" href="#">Calculators</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown mx-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Calculators
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: cyan;">
+                      <li><a class="dropdown-item"  href="CGPA.html">CGPA CALCULATOR</a></li>
+                      <li><a class="dropdown-item" href="EB.html">EB CALACULATOR</a></li>
+                      <li><a class="dropdown-item" href="farenheit.html">FARENHEIT TO  CELCIUS CALCULATOR</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">about</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>  <br><br>  
+    <div class="float">
+    <table id="box" cellpadding="5" align="center" style="text-align:center;background-color:#9AFEFF;" >
+    <tr>
+    <td>% of Marks</td><td>91-100</td><td>81-90</td><td>71-80</td><td>61-70</td><td>51-60</td>
+    </tr>
+    <tr>
+    <td>Letter Grade</td><td>O</td><td>A+</td><td>A</td><td>B+</td><td>B</td>
+    </tr>
+    <tr>
+    <td>Grade Point</td><td>10</td><td>9</td><td>8</td><td>7</td><td>6</td>
+    </tr>
+    </table>
+    </div>
+    <div class="center" >
+    <div>
+    <h1 style="text-align:center;" > CGPA CALCULATOR </h1>
+    
+    
+    <br>
+    <br>
+    
+    
+    <p id="enter">Enter number of sementer to be calculated for cgpa</p>
+    <input type="text" id="count" />
+    <div>
+    <p id="sem1"></p>
+    <p id="sem2"></p>
+    <p id="sem3"></p>
+    <p id="sem4"></p>
+    <p id="sem5"></p>
+    <p id="sem6"></p>
+    <p id="sem7"></p>
+    <p id="sem8"></p>
+    <button onclick="myFunction1()">gpa</button>
+    <p id="cgpa"></p>
+    
+    <button onclick="cgpa()">cgpa</button>
+    
+    </div>
+    </div>
+    <div >
+        <p id="enter">Enter the subject  course credits and grade points of semester: 1</p>
+     <table id="box"style=background-color:LightCyan align="center" >
+        <thead>
+            <tr>
+                <th>Subjects No:</th>
+                <th>Course credits</th>
+                <th>Grade points</th>
+               
+            </tr>
+            </thead>
+    
+            <tbody>
+    
+            <tr>
+            <td> subject 1</td>
+            <td><input type="text" id="sem11a" /></td>
+            <td><input type="text" id="sem11b"  /></td>
+            </tr>
+    
+    
+            <tr>
+                <td> subject 2</td>
+                <td><input type="text" id="sem12a"  /></td>
+                <td><input type="text" id="sem12b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 3</td>
+                <td><input type="text" id="sem13a" /></td>
+                <td><input type="text" id="sem13b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 4</td>
+                <td><input type="text" id="sem14a"  /></td>
+                <td><input type="text" id="sem14b"/></td>
+            </tr>
+    
+            <tr>
+                <td> subject 5</td>
+                <td><input type="text" id="sem15a"  /></td>
+                <td><input type="text" id="sem15b"  /></td>
+            </tr>
+            <tr>
+                <td> subject 6</td>
+                <td><input type="text" id="sem16a"  /></td>
+                <td><input type="text" id="sem16b" /></td>
+            </tr>
+            
+           
+            </tbody>
+    
+    </table>
+    </div>
+    
+    <div >
+        <p id="enter">Enter the subject  course credits and grade points of semester: 2</p>
+     <table id="box" style=background-color:LightCyan align="center" >
+        <thead>
+            <tr>
+                <th>Subjects No:</th>
+                <th>Course credits</th>
+                <th>Grade points</th>
+               
+            </tr>
+            </thead>
+    
+            <tbody>
+    
+            <tr>
+            <td> subject 1</td>
+            <td><input type="text" id="sem21a" /></td>
+            <td><input type="text" id="sem21b"  /></td>
+            </tr>
+    
+    
+            <tr>
+                <td> subject 2</td>
+                <td><input type="text" id="sem22a"  /></td>
+                <td><input type="text" id="sem22b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 3</td>
+                <td><input type="text" id="sem23a" /></td>
+                <td><input type="text" id="sem23b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 4</td>
+                <td><input type="text" id="sem24a"  /></td>
+                <td><input type="text" id="sem24b"/></td>
+            </tr>
+    
+            <tr>
+                <td> subject 5</td>
+                <td><input type="text" id="sem25a"  /></td>
+                <td><input type="text" id="sem25b"  /></td>
+            </tr>
+            <tr>
+                <td> subject 6</td>
+                <td><input type="text" id="sem26a"  /></td>
+                <td><input type="text" id="sem26b" /></td>
+            </tr>
+            
+           
+            </tbody>
+    
+    </table>
+    </div>
+    
+    <div >
+        <p id="enter">Enter the subject  course credits and grade points of semester:3 </p>
+     <table id="box" style=background-color:LightCyan align="center" >
+        <thead>
+            <tr>
+                <th>Subjects No:</th>
+                <th>Course credits</th>
+                <th>Grade points</th>
+               
+            </tr>
+            </thead>
+    
+            <tbody>
+    
+            <tr>
+            <td> subject 1</td>
+            <td><input type="text" id="sem31a" /></td>
+            <td><input type="text" id="sem31b"  /></td>
+            </tr>
+    
+    
+            <tr>
+                <td> subject 2</td>
+                <td><input type="text" id="sem32a"  /></td>
+                <td><input type="text" id="sem32b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 3</td>
+                <td><input type="text" id="sem33a" /></td>
+                <td><input type="text" id="sem33b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 4</td>
+                <td><input type="text" id="sem34a"  /></td>
+                <td><input type="text" id="sem34b"/></td>
+            </tr>
+    
+            <tr>
+                <td> subject 5</td>
+                <td><input type="text" id="sem35a"  /></td>
+                <td><input type="text" id="sem35b"  /></td>
+            </tr>
+            <tr>
+                <td> subject 6</td>
+                <td><input type="text" id="sem36a"  /></td>
+                <td><input type="text" id="sem36b" /></td>
+            </tr>
+            
+           
+            </tbody>
+    
+    </table>
+    </div>
+    
+    <div >
+        <p id="enter">Enter the subject  course credits and grade points of semester:4 </p>
+     <table id="box"  style=background-color:LightCyan align="center" >
+        <thead>
+            <tr>
+                <th>Subjects No:</th>
+                <th>Course credits</th>
+                <th>Grade points</th>
+               
+            </tr>
+            </thead>
+    
+            <tbody>
+    
+            <tr>
+            <td> subject 1</td>
+            <td><input type="text" id="sem41a" /></td>
+            <td><input type="text" id="sem41b"  /></td>
+            </tr>
+    
+    
+            <tr>
+                <td> subject 2</td>
+                <td><input type="text" id="sem42a"  /></td>
+                <td><input type="text" id="sem42b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 3</td>
+                <td><input type="text" id="sem43a" /></td>
+                <td><input type="text" id="sem43b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 4</td>
+                <td><input type="text" id="sem44a"  /></td>
+                <td><input type="text" id="sem44b"/></td>
+            </tr>
+    
+            <tr>
+                <td> subject 5</td>
+                <td><input type="text" id="sem45a"  /></td>
+                <td><input type="text" id="sem45b"  /></td>
+            </tr>
+            <tr>
+                <td> subject 6</td>
+                <td><input type="text" id="sem46a"  /></td>
+                <td><input type="text" id="sem46b" /></td>
+            </tr>
+            
+           
+            </tbody>
+    
+    </table>
+    </div>
+    
+    <div >
+        <p id="enter">Enter the subject  course credits and grade points of semester: 5</p>
+     <table id="box" style=background-color:LightCyan align="center" >
+        <thead>
+            <tr>
+                <th>Subjects No:</th>
+                <th>Course credits</th>
+                <th>Grade points</th>
+               
+            </tr>
+            </thead>
+    
+            <tbody>
+    
+            <tr>
+            <td> subject 1</td>
+            <td><input type="text" id="sem51a" /></td>
+            <td><input type="text" id="sem51b"  /></td>
+            </tr>
+    
+    
+            <tr>
+                <td> subject 2</td>
+                <td><input type="text" id="sem52a"  /></td>
+                <td><input type="text" id="sem52b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 3</td>
+                <td><input type="text" id="sem53a" /></td>
+                <td><input type="text" id="sem53b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 4</td>
+                <td><input type="text" id="sem54a"  /></td>
+                <td><input type="text" id="sem54b"/></td>
+            </tr>
+    
+            <tr>
+                <td> subject 5</td>
+                <td><input type="text" id="sem55a"  /></td>
+                <td><input type="text" id="sem55b"  /></td>
+            </tr>
+            <tr>
+                <td> subject 6</td>
+                <td><input type="text" id="sem56a"  /></td>
+                <td><input type="text" id="sem56b" /></td>
+            </tr>
+            
+           
+            </tbody>
+    
+    </table>
+    </div>
+    
+    <div >
+        <p id="enter">Enter the subject  course credits and grade points of semester:6 </p>
+     <table id="box"  style=background-color:LightCyan align="center" >
+        <thead>
+            <tr>
+                <th>Subjects No:</th>
+                <th>Course credits</th>
+                <th>Grade points</th>
+               
+            </tr>
+            </thead>
+    
+            <tbody>
+    
+            <tr>
+            <td> subject 1</td>
+            <td><input type="text" id="sem61a" /></td>
+            <td><input type="text" id="sem61b"  /></td>
+            </tr>
+    
+    
+            <tr>
+                <td> subject 2</td>
+                <td><input type="text" id="sem62a"  /></td>
+                <td><input type="text" id="sem62b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 3</td>
+                <td><input type="text" id="sem63a" /></td>
+                <td><input type="text" id="sem63b" /></td>
+            </tr>
+    
+            <tr>
+                <td> subject 4</td>
+                <td><input type="text" id="sem64a"  /></td>
+                <td><input type="text" id="sem64b"/></td>
+            </tr>
+    
+            <tr>
+                <td> subject 5</td>
+                <td><input type="text" id="sem65a"  /></td>
+                <td><input type="text" id="sem65b"  /></td>
+            </tr>
+            <tr>
+                <td> subject 6</td>
+                <td><input type="text" id="sem66a"  /></td>
+                <td><input type="text" id="sem66b" /></td>
+            </tr>
+            
+           
+            </tbody>
+    
+    </table>
+    </div>
+    <script>
+    
+        var gpasum=0;
+        
+     
+    
+    function myFunction1() {
+        var count=document.getElementById("count").value;
+        let sum = 0,creditsum=0,gpa=0;
+    for(let i=1;i<=count;i++)
+    {
+        for(let j=1;j<=6;j++)
+        {
+            let product,credit,grade;
+            let a="sem"+i+j+"a";
+            let b="sem"+i+j+"b";
+            credit=document.getElementById(a).value;
+            grade=document.getElementById(b).value;
+            creditsum=creditsum + credit*1;
+            product= credit * grade;
+            sum=sum + product;
+            
+        }
+        gpa=sum/creditsum;
+        document.getElementById("sem"+i).innerHTML = gpa ;
+        gpasum =gpasum + gpa;
+    }
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    function cgpa(){
+        var count=document.getElementById("count").value;
+        let cgpa1= gpasum/count;
+        document.getElementById("cgpa").innerHTML = cgpa1 ;
+     } 
+    </script>
+    </div>
+    </body>
+    </html>
